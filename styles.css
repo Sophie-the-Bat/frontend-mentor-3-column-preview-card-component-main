@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+   
+}
+
+
+li {
+    min-height: 25rem;
+    /*width according to given design*/
+    width: 322px;
+        padding: 3rem;
+    background-color: var(--section-color);
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2::before {
+    content: "";
+    background-image: var(--icon);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 3rem;
+    width: 6rem;
+    margin: 0 2rem 2rem 0;
+}
+
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2em;
+    margin-bottom: 2rem;
+}
+
+
+li > a {
+    padding: 1rem;
+    background-color:  hsl(0, 0%, 95%);
+    color: var(--section-color);
+    text-decoration: none;
+    border: 1px solid currentColor;
+    border-radius: 2rem;
+}
+
+li > a:hover {
+    background-color: var(--section-color);
+    color: hsl(0, 0%, 95%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sedans {
+    --icon: url(images/icon-sedans.svg);
+    --section-color: hsl(31, 77%, 52%);
+
+}
+
+.suvs{
+    --icon: url(images/icon-suvs.svg);
+    --section-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    --icon: url(images/icon-luxury.svg);
+    --section-color: hsl(179, 100%, 13%);
+}
